@@ -2,6 +2,7 @@ package com.korit.main;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 public class Main4 {
@@ -25,6 +26,17 @@ public class Main4 {
         */
 
         numberList3 = numberList.stream().map(n -> n * 10).collect(Collectors.toList());
+
+
+//        AtomicReference<Integer> num = new AtomicReference<>(0);
+//        final List<Integer> numberList4 = new ArrayList<>();
+//
+//        numberList.forEach(number -> {
+//            numberList4.add(number);
+//            number.set(number);
+//                }
+//
+//        );
 
 
         System.out.println(numberList);
